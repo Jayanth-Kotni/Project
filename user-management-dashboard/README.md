@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+###User Management App
+A React-based User Management application to list, add, edit, and delete users. The app utilizes React Router for navigation, Axios for API requests, and includes error handling with an ErrorBoundary component.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+###Features
+View Users: Displays a list of users fetched from an API.
+Add User: Allows adding a new user via a form.
+Edit User: Edit existing user details.
+Delete User: Remove users from the list.
+Error Handling: Handles errors gracefully using an ErrorBoundary.
+###Technologies Used
+React: Component-based front-end framework.
+React Router: Navigation between pages.
+Axios: HTTP client for API requests.
+CSS: Custom styling for responsiveness and aesthetics.
+JSONPlaceholder: Mock API for testing.
+###Installation
+1. Clone the Repository
+git clone https://github.com/your-username/user-management-app.git
+cd user-management-app
+2. Install Dependencies
+npm install
+3. Run the App
+npm start
+The app will be available at http://localhost:3000 in your browser.
 
-## Available Scripts
+###File Structure
 
-In the project directory, you can run:
+src
+├── components
+│   ├── UserList          # Component for displaying the list of users
+│   ├── UserForm          # Component for adding/editing users
+│   ├── ErrorBoundary     # Component for handling runtime errors
+├── App.css               # Global styles
+├── App.js                # Main application entry point
+├── index.js              # React entry point
+###Usage
+View Users
+Navigate to / (default route) to view the list of users.
+Add User
+Click the Add User button on the user list page.
+Fill in the form and submit.
+Edit User
+Click the Edit button next to a user.
+Update the user details in the form and save.
+Delete User
+Click the Delete button next to a user to remove them.
+###API Information
+The app uses the JSONPlaceholder API for testing:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Fetch Users: GET /users
+Delete User: DELETE /users/:id
+Add/Edit User: POST/PUT /users
+Known Issues
+The mock API doesn’t persist changes (data resets on refresh).
+Limited user data fields due to the mock API.
+Contributing
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Commit changes (git commit 

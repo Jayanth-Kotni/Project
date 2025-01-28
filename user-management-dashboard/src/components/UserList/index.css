@@ -1,0 +1,22 @@
+/* General Styles */
+body {
+  font-family:Poppins;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+.btn-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.head-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-head{
+  font-size: 2rem;
+  color: #333;
+}
